@@ -29,4 +29,4 @@ Electronics and Clothing product types sell the most frequently.
 # Top Customers
 top_customers = df.groupby('customer_id', as_index=False)['total_sale'].sum().sort_values(by='total_sale', ascending=False).head(10) sns.barplot(x='customer_id', y='total_sale', data=top_customers) plt.title('Top 10 Customers by Sales') plt.xticks(rotation=45) plt.show()
 
-Customer_id 3 is the top customer by sales
+#Customer_id 3 is the top customer by sales
